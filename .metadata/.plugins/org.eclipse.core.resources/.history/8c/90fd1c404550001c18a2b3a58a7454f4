@@ -1,0 +1,9 @@
+package com.greatlearning.main;
+
+public class Driver {
+	// Declare a main method
+	public static void main(String args[]) {
+		// Take inputs from the user for firstName, lastName, choice - department id 
+	}
+	
+}

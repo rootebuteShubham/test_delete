@@ -1,0 +1,58 @@
+package com.greatlearning.main;
+import java.util.Scanner;
+import com.greatlearning.model.*;
+
+public class Driver {
+	
+	// Create Object
+	private static Scanner sc = new Scanner(System.in);
+	private static Customer customer = new Customer("GL00001234","password123");
+	
+	public static void main(String[] args) {
+		// welcome message
+		displayWelcomeMessage();
+		
+		// Authenticate the credentials
+		if(isCredentialsOk()) {
+			System.out.println("Successfully Authenticated");
+			
+			// display menu
+			displayMenu();
+			
+		} else {
+			System.out.println("Authentication failure");
+		}
+		
+	}
+	
+	private static void displayWelcomeMessage() {
+		System.out.println("Welcome to the Greatlearning Bank");
+	}
+	
+	
+	private static boolean isCredentialsOk() {
+		System.out.println("Enter your account number");
+		String accountNo = sc.next();
+		System.out.println(accountNo);
+		
+		System.out.println("Enter your password");
+		String password = sc.next();
+		System.out.println(password);
+		
+		return customer.getBankAccountNo().equals(accountNo) && customer.getPassword().equals(password);
+		
+	}
+	
+	
+	private static void displayMenu() {
+		System.out.println("--------------------------------------");
+		System.out.println("1.Deposit");
+		System.out.println("2.Withdraw");
+		System.out.println("3.Transfer");
+		System.out.println("4.Logout");
+		System.out.println("--------------------------------------");
+	}
+}
+
+
+

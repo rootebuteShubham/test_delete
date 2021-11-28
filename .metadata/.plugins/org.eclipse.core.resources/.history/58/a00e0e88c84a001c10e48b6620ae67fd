@@ -1,0 +1,26 @@
+package com.greatlearning.main;
+import java.util.Scanner;
+
+public class Driver {
+	
+	// Create Object
+	private static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		// welcome message
+		displayWelcomeMessage();
+		
+		// Authenticate the credentials
+		
+	}
+	
+	private static void displayWelcomeMessage() {
+		System.out.println("Welcome to the Greatlearning Bank");
+	}
+	
+	
+	private static void isCredentialsOk() {
+		System.out.println("Enter your account number");
+		String accountNo = sc.next();
+	}
+}

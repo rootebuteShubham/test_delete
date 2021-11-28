@@ -1,0 +1,13 @@
+package com.greatlearning.main;
+
+public class Driver {
+	public static void main(String[] args) {
+		// welcome message
+		displayWelcomeMessage();
+		
+	}
+	
+	private static void displayWelcomeMessage() {
+		System.out.println("Welcome to the Greatlearning Bank");
+	}
+}

@@ -1,0 +1,10 @@
+package com.greatlearning.main;
+import java.util.Scanner;
+
+public class Driver {
+	// Declare a main method
+	public static void main(String args[]) {
+		// Take inputs from the user for firstName, lastName, display the menu of all the departments - 1.Technical, 2.Admin, 3. Human Resource, 4. Legal, choice - department id, 
+	}
+	
+}

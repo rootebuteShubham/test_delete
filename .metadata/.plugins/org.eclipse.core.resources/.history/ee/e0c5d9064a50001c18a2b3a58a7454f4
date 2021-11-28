@@ -1,0 +1,8 @@
+package com.greatlearning.service;
+import com.greatlearning.model.*;
+
+public class CredentialService {
+	public String generateEmailAddress(Employee emp) {
+		return "";
+	}
+}

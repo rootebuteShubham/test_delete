@@ -1,0 +1,26 @@
+package com.greatlearning.service;
+import com.greatlearning.model.*;
+
+public class CredentialService {
+	// generate email address
+	public String generateEmailAddress(Employee emp) {
+		return emp.getFirstName().toLowerCase() + emp.getLastName().toLowerCase() + "@" + emp.getDepartment().toLowerCase() + ".abc.com";
+	}
+	
+	
+	public String generatePassword() {
+		// Generate a 8 digit password which can have capital letters, small letters, numbers, special characters
+		String capitalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String smallLetters = "abcdefghijklmnopqrstuvwxyz";
+		String numbers = "0123456789";
+		String specialCharacters = "!@#$%^&*_=+-/.?<>)";
+
+		String allowedChars = capitalLetters + smallLetters + numbers + specialCharacters;
+		
+		return "";
+	}
+	
+	public void showCredentials() {
+		
+	}
+}
